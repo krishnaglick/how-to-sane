@@ -38,7 +38,6 @@ export default Ember.Object.extend({
     },
 
     getLatLongForAddress: function (address) {
-        // console.log('GETLATLONG', this.geocoding(address));
    		 return this.geocoding(address);
     },
 
@@ -86,8 +85,7 @@ export default Ember.Object.extend({
 
          new google.maps.Marker({
             map: map,
-            position: center,
-            icon: '/images/icons/smiley_happy.png'
+            position: center
         });
     },
 

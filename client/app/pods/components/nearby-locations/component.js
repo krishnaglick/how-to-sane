@@ -59,13 +59,13 @@ export default Ember.Component.extend(GeoLocationMixin,{
             }
         });
     },
-    getNearbyPlaces: function (geoposition) {
+    getNearbyPlaces: function (geoposition, radius, query) {
         var _this = this;
 
         var request = {
             location: this.get('areaGeo'),
-            radius: '500',
-            query: 'restaurant'
+            radius: radius,
+            query: query
         };
 
         var service = new google.maps.places.PlacesService(this.get('map'));
