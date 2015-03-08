@@ -14,6 +14,8 @@ export default Ember.Controller.extend({
       console.log('Geolocation is not supported by this browser.');
     }
 
+    // TODO: fix race condition here between the controller and the component
+
     function setCurrentCoordinates (position) {
       console.log('ctrl run');
       _this.set('latitude', position.coords.latitude);

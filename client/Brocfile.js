@@ -17,7 +17,6 @@ app.import('bower_components/wookmark-jquery/jquery.wookmark.min.js');
 app.import('bower_components/wookmark-jquery/libs/jquery.imagesloaded.js');
 
 app.import('bower_components/geoPosition/js/geoPosition.js');
-app.import('bower_components/lodash/lodash.min.js');
 
 
 // Use `app.import` to add additional libraries to the generated

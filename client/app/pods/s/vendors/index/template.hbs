@@ -19,7 +19,8 @@
     </div>
 		<label for="maxDistance">Max Distance</label>
 		{{input type="number" name="maxDistance" value=maxDistance}}
-		<br>
+		<span class="btn btn-default">Search</span>
+		<div class="bump"></div>
     {{! TODO - make filter radios for food, adventure etc. hook them to query param and redo api call for places}}
     <vendor-map vendors={{model}} latitude={{latitude}} longitude={{longitude}}></vendor-map>
 </div>
