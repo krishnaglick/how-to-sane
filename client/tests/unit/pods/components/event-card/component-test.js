@@ -3,9 +3,28 @@ import {
     test
 } from 'ember-qunit';
 
+import chai from 'chai';
+import { expect } from 'chai';
+
 import { initialize } from '../../../../../initializers/ember-moment';
 
 moduleForComponent('event-card', 'EventCardComponent',  {integration: true});
+
+
+test('it spy works', function (assert) {
+    assert.expect(0);
+    function hello(name, cb) {
+        cb("hello " + name);
+    }
+
+    var cb = sinon.spy();
+    hello("foo", cb);
+
+    expect(cb.called).to.be.true;
+    // assert.ok(cb.called);
+});
+
+
 
 test('it renders', function (assert) {
     assert.expect(2);
